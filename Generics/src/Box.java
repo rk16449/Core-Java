@@ -16,18 +16,26 @@ public class Box <T> {
 	
 	
 	public static void main(String[] args) {
-		// T in Box<T> is called the type parameter
-		// Integer in Box<Integer> is called type argument
-		
-		
+		/* 
+		 * 
+		 * T in Box<T> is called the type parameter
+		 * Integer in Box<Integer> is called type argument
+		 * 
+		 * 
+		 * <> is informally called the Diamond
+		 * This is legal
+		 * Box<Integer> boxInteger = new Box<>(); 
+		 * 
+		 * 
+		 * This cannot work, as they are not the same type argument
+		 * boxInteger.setBox("");
+		 */
 		
 		Box<Integer> boxInteger = new Box<Integer>();
 		Box<String> boxString = new Box<String>();
 		
-		// This cannot work, as they are not the same type argument
-		// boxInteger.setBox("");
-		
 		// This can work
 		boxInteger.setBox(5);
+		boxString.setBox("5");
 	}
 }
