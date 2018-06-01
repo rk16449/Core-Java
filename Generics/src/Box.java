@@ -13,4 +13,21 @@ public class Box <T> {
 	public T getBox() {
 		return box;
 	}
+	
+	
+	public static void main(String[] args) {
+		// T in Box<T> is called the type parameter
+		// Integer in Box<Integer> is called type argument
+		
+		
+		
+		Box<Integer> boxInteger = new Box<Integer>();
+		Box<String> boxString = new Box<String>();
+		
+		// This cannot work, as they are not the same type argument
+		// boxInteger.setBox("");
+		
+		// This can work
+		boxInteger.setBox(5);
+	}
 }
