@@ -1,4 +1,4 @@
-public class MultiplePair <K, V> implements Pair<K, V> {
+public class MultiplePair <K, V> implements iPair<K, V> {
 
 	private K key;
 	private V value;

@@ -1,4 +1,5 @@
-public interface Pair<K, V>{
+
+public interface iPair<K, V>{
 	public K getKey();
 	public V getValue();
 }
