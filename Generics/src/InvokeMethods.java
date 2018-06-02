@@ -1,9 +1,9 @@
 // Invoke Integer methods into T
-public class BoundedBoxInvokeMethods<T extends Integer> {
+public class InvokeMethods<T extends Integer> {
 
 	private T value;
 
-	public BoundedBoxInvokeMethods(T v) {
+	public InvokeMethods(T v) {
 		this.value = v;
 	}
 	
