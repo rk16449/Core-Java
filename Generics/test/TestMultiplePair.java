@@ -36,5 +36,19 @@ public class TestMultiplePair {
 		// value should be '5'
 		assertEquals(p1.getValue(), new Integer(5)); 
 	}
+	
+	
+	@Test
+	void testCreateParameterisedTypes() {
+		
+		// Java compiler can infer the K and V types so we can use Diamond notation
+		iPair<String, Box<Integer>> p1 = new MultiplePair<>("Test", new Box<Integer>());
+		
+		// Set the value of the box to 5
+		p1.getValue().setBox(5);
+		
+		// value of the box should be '5'
+		assertEquals(p1.getValue().getBox(), new Integer(5)); 
+	}
 
 }
