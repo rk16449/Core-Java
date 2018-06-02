@@ -1,6 +1,6 @@
 import java.util.List;
 
-public class WildCards {
+public class Wildcards {
 
 	// ? represents the unknown type
 	// it is never used in:
