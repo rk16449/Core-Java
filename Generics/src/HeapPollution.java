@@ -24,6 +24,10 @@ public class HeapPollution {
 		ArrayBuilder.addToList(stringListA, "One", "Two", "Three");
 		ArrayBuilder.addToList(stringListB, "Four", "Five", "Six");
 		
+		List<List<String>> listOfStringsLists = new ArrayList<List<String>>();
 		
+		ArrayBuilder.addToList(listOfStringsLists, stringListA, stringListB);
+		
+		ArrayBuilder.faultyMethod(Arrays.asList("Hello"), Arrays.asList("World!"));
 	}
 }
