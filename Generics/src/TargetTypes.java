@@ -14,5 +14,16 @@ public class TargetTypes {
 		
 		// Alternatively we could use a type witness and specify T (not necessary)
 		List<Integer> listTwo = Collections.<Integer>emptyList();
+		
+		
+		// Wouldn't compile in SE 7, but does in SE 8+
+		processIntegerList(Collections.emptyList());
+		
+		// Works in SE 7+
+		processIntegerList(Collections.<Integer>emptyList());
+	}
+	
+	static void processIntegerList(List<Integer> intList) {
+		// process list here
 	}
 }
