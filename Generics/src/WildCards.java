@@ -9,7 +9,16 @@ public class WildCards {
 	//  - supertype
 	
 	// Upper-Bounded Wildcards
-	static void calculate(List<? extends Number> list) {
+	static <E> int countLowerValues(List<? extends Comparable<Number>> list, E elem) {
 		// calculate stuff here
+		int count = 0;
+		
+		for(Comparable<Number> e : list) {
+			if(e.compareTo((Number) elem) < 0) {
+				++count;
+			}
+		}
+		
+		return count;
 	}
 }
