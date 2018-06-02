@@ -1,4 +1,7 @@
 // Generic Node in a singly-linked list
+// Because T is unbounded, the Java compiler will replace it with Object
+// See NodeReplacement.java for how the compiler will change the above code
+
 public class Node<T> {
 
 	private T first;
@@ -17,6 +20,3 @@ public class Node<T> {
 		return next;
 	}
 }
-
-
-// Because T is unbounded, the Java compiler will replace it with Object
