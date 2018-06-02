@@ -13,12 +13,11 @@ public class TestMultiplePair {
 		 */
 		
 		
-		// Autoboxing parameters on MultiplePair occurs
+		// Due to autoboxing, it is valid to pass a String and an int to the class here
 		iPair<String, Integer> p1 = new MultiplePair<String, Integer>("Test", 5);
-		iPair<Integer, String> p2 = new MultiplePair<>(5, "Hello");
 		
 		// Output should be 5
-		assertEquals(p2.getKey(), new Integer(5)); 
+		assertEquals(p1.getKey(), new Integer(5)); 
 	}
 
 }
