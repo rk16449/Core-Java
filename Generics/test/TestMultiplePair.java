@@ -1,7 +1,13 @@
+import static org.junit.jupiter.api.Assertions.*;
 
-public class testPair {
+import org.junit.jupiter.api.Test;
 
-	public static void main(String[] args) {
+public class TestMultiplePair {
+
+	@Test
+	void testCreate() {
+		
+		
 		/**
 		 * Legal ways of creating MultiplePair objects
 		 */
@@ -11,8 +17,8 @@ public class testPair {
 		iPair<String, Integer> p1 = new MultiplePair<String, Integer>("Test", 5);
 		iPair<Integer, String> p2 = new MultiplePair<>(5, "Hello");
 		
-		// Output of 5
-		System.out.println(p2.getKey());
+		// Output should be 5
+		assertEquals(p2.getKey(), new Integer(5)); 
 	}
 
 }
