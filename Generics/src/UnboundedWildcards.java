@@ -4,11 +4,17 @@ import java.util.List;
 
 public class UnboundedWildcards {
 	
-	// input the list of unknown type
+	// input the list of unknown type, null can be inserted here
 	static void outputList(List<?> list) {
+		if(list == null) return; // stop NullPointerException occuring below
+		
 		for(Object elem : list) {
 			System.out.println(elem);
 		}
+	}
+	
+	static void outputObjectList(List<Object> list) {
+		// compute something...
 	}
 	
 	public static void main(String[] args) {
@@ -19,5 +25,6 @@ public class UnboundedWildcards {
 		
 		outputList(listOne);
 		outputList(listTwo);
+		outputList(null);
 	}
 }
