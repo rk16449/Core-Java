@@ -7,7 +7,7 @@ class TestGenericClass {
 	@Test
 	void testConstructor() {
 		GenericClass<Integer> intObject = new GenericClass<>("Constructor");
-		System.out.println(intObject.getVal());
+		System.out.println(intObject.getVal()); 
 	}
 
 }
