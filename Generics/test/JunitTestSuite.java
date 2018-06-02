@@ -5,7 +5,9 @@ import org.junit.runners.Suite;
 
 @Suite.SuiteClasses({
    TestBox.class,
-   TestMultiplePair.class
+   TestMultiplePair.class,
+   TestMethods.class,
+   TestBoundedBox.class
 })
 
 public class JunitTestSuite {   
