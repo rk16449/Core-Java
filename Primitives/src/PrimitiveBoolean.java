@@ -1,6 +1,8 @@
 
 public class PrimitiveBoolean {
 	
+	
+	
 	public static void main(String[] args) {
 		// A boolean is one of the eight primitive data types in Java
 		
@@ -23,6 +25,7 @@ public class PrimitiveBoolean {
 		// However the programmer can write conversion code on assignment like below:
 		
 		boolean convertToBoolean = 65>0 ? true : false;
+		System.out.println(convertToBoolean);
 	}
 	
 	
