@@ -26,12 +26,11 @@ public class LegalNaming {
 		
 		
 		// Valid creation of arrays
-		int[] []x[];
+		int[] []x[]; 
 		
 		
 		// Keywords
 		// transient 
-		
 	}
 	
 }
